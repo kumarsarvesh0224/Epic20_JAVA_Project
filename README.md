@@ -4,9 +4,9 @@ Step 1 : Launch Docker desktop application
 
 Step 2 : Open CMD and run -> docker pull cassandra:4.1 
 
-Step 3 : run ->   docker run -d ^ --name cassandra ^ -p 9042:9042 ^ cassandra:4.1   command in the same CMD window
+Step 3 : run command in the same CMD window ->   docker run -d ^ --name cassandra ^ -p 9042:9042 ^ cassandra:4.1   
 
-Step 4 : run ->   docker exec -it cassandra cqlsh     in the same CMD window
+Step 4 : run in the same CMD window ->   docker exec -it cassandra cqlsh     
 
 Step 5 : run inside cqlsh in one line ->  CREATE KEYSPACE employee_keyspace WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1}; USE employee_keyspace; CREATE TABLE employee ( id uuid PRIMARY KEY, name text, email text, salary double );
 
